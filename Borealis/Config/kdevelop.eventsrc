@@ -1,0 +1,11 @@
+[ProcessError]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/Borealis/Error1.ogg
+
+[ProcessSuccess]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/Borealis/Question.ogg

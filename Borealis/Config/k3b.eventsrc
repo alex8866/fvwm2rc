@@ -1,0 +1,17 @@
+[FinishedWithError]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/k3b_error1.ogg
+
+[SuccessfullyFinished]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/Borealis/K3b_success.ogg
+
+[WaitingForMedium]
+commandline=
+logfile=
+presentation=65
+soundfile=/usr/share/sounds/Borealis/Kopete_notify.ogg

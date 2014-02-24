@@ -1,0 +1,27 @@
+WindowTitle	{Uptime}
+WindowSize	120 20
+Colorset	30
+
+Init
+Begin
+    Set $up = (GetOutput {uptime | tr -s ' ' '\t'|cut -f 4|cut -d \, -f 1,60000} 1 -1)
+    ChangeTitle 1 $up
+End
+
+PeriodicTasks
+Begin
+    If (RemainderOfDiv (GetTime) 60)==0 Then
+    Begin
+	Set $up = (GetOutput {uptime | tr -s ' ' '\t'|cut -f 4|cut -d \, -f 1,60000} 1 -1)
+        ChangeTitle 1 $up
+    End
+End
+
+Widget		1
+Property
+    Type	ItemDraw
+    Size	120 20
+    Position	0 0
+    Font	"shadow=1 1 se:xft:Blippo:Bold:pixelsize=11"
+    Flags	NoFocus NoReliefString
+End

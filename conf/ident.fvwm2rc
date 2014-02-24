@@ -1,0 +1,8 @@
+Style FvwmIdent	EWMHMiniIconOverride, \
+		Icon $[fvwm_icon]/64x64/apps/gnome-help.png, \
+		MiniIcon $[fvwm_icon]/16x16/apps/gnome-help.png
+
+DestroyModuleConfig FvwmIdent: *
+*FvwmIdent: Colorset 21
+*FvwmIdent: Font "StringEncoding=gbk-0:Shadow=1 C:xft:HYDieYuJ:pixelsize=11:encoding=iso10646-1"
+*FvwmIdent: Font -*-simsun-medium-r-*-*-6-*-*-*-*-*-*-*

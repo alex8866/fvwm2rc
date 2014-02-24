@@ -1,0 +1,21 @@
+A
+A
+A
+A
+A
+###################################################################
+### Wallpapers
+###################################################################
+
+DestroyModuleConfig FvwmBacker: *
+*FvwmBacker: RetainPixmap
+*FvwmBacker: Command(Desk 0, Page * *) Exec exec Esetroot -scale  $[fvwm_wallpaper_dir]/.current/my11.jpg && FvwmCommand Refresh
+*FvwmBacker: Command(Desk 1, Page * *) Exec exec Esetroot -scale  $[fvwm_wallpaper_dir]/.current/my.jpg && FvwmCommand Refresh
+
+*FvwmBacker: Command(Desk 2, Page * *) Exec exec Esetroot -scale  $[fvwm_wallpaper_dir]/.current/desk-3.jpg && FvwmCommand Refresh
+
+*FvwmBacker: Command(Desk 3, Page * * ) Exec exec Esetroot -scale  #[fvwm_wallpaper_dir]/.current/desk-2.jpg && FvwmCommand Refresh
+
+
+
+

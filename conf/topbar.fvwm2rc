@@ -1,0 +1,40 @@
+Style FvwmTopBar 	NoTitle, StaysOnTop, Sticky, WindowListSkip, \
+		CirculateSkipIcon, CirculateSkip, HandleWidth 0, BorderWidth 0, \
+		NeverFocus
+
+# This size corresponds to: ScreenWidth(1024) - Border(5) - Border(5)
+SetEnv fvwm_topbar_width	    1024
+# This size corresponds to: fvwm_topbar_width - 265
+SetEnv fvwm_topbar_iconman_width    910
+SetEnv fvwm_topbar_icon_width	    78
+# This end of IconMan position corresponds to: fvwm_topbar_width + fvwm_topbar_icon_width(125)
+SetEnv fvwm_topbar_endim_pos	    988
+# This battery level position corresponds to: fvwm_topbar_endim_pos + EndIconManWidth(12)
+#SetEnv fvwm_topbar_battery_pos	    
+# This inter application position 1 corresponds to: fvwm_topbar_battery_pos + VolumeWidth(36)
+#SetEnv fvwm_topbar_interap_pos1	    956
+# This volume level position corresponds to: fvwm_topbar_interap_pos1 + InterApWidth(6)
+#SetEnv fvwm_topbar_volume_pos	    986
+# This inter application position 2 corresponds to: fvwm_topbar_volume_pos + VolumeWidth(36)
+SetEnv fvwm_topbar_interap_pos2	   995 
+# This wifi position corresponds to: fvwm_topbar_interap_pos2 + InterApWidth(6)
+#SetEnv fvwm_topbar_wifi_pos	    1226
+# This end of topbar position corresponds to: fvwm_topbar_wifi_pos + WifiWidth(36)
+SetEnv fvwm_topbar_end_pos	    1013
+
+DestroyModuleConfig FvwmTopBar: *
+*FvwmTopBar: BoxSize		fixed
+*FvwmTopBar: Colorset		23
+*FvwmTopBar: Columns		$[fvwm_topbar_width]
+*FvwmTopBar: Rows		25
+*FvwmTopBar: Geometry		$[fvwm_topbar_width]x25+1+1
+*FvwmTopBar: Frame		0
+*FvwmTopBar: Padding		0 0
+*FvwmTopBar: (	$[fvwm_topbar_icon_width]x25+0+0, \
+		Icon $[fvwm_theme_img]/topbar_head.png, \
+		Action(Mouse 1)	`Menu MenuFvwmRoot`)
+*FvwmTopBar: (	$[fvwm_topbar_iconman_width]x4+$[fvwm_topbar_icon_width]+0,Icon $[fvwm_theme_img]/topbar_up.png)
+*FvwmTopBar: (	$[fvwm_topbar_iconman_width]x17+$[fvwm_topbar_icon_width]+4,Swallow "FvwmIconMan" "FvwmIconMan -g $[fvwm_topbar_iconman_width]x15", \)
+*FvwmTopBar: (	$[fvwm_topbar_iconman_width]x4+$[fvwm_topbar_icon_width]+21,Icon $[fvwm_theme_img]/topbar_down.png)
+*FvwmTopBar: (	16x25+$[fvwm_topbar_interap_pos2]+0, 	Icon $[fvwm_theme_img]/desktop.png, Action(Mouse 1) All (AcceptsFocus, CurrentPage, !Iconic, !Shaded) Thumbnail )
+*FvwmTopBar: (	8x25+$[fvwm_topbar_end_pos]+0,	Icon $[fvwm_theme_img]/topbar_tail.png)

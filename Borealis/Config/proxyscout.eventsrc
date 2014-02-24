@@ -1,0 +1,17 @@
+[download-error]
+commandline=
+logfile=
+presentation=17
+soundfile=/usr/share/sounds/Borealis/Error2.ogg
+
+[evaluation-error]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/Borealis/Error1.ogg
+
+[script-error]
+commandline=
+logfile=
+presentation=17
+soundfile=/usr/share/sounds/Borealis/Error1.ogg

@@ -1,0 +1,8 @@
+[$Version]
+update_info=kmail.upd:3.1-new-mail-notification
+
+[new-mail-arrived]
+commandline=
+logfile=
+presentation=1
+soundfile=/usr/share/sounds/Borealis/Kmail.ogg

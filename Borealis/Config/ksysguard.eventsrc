@@ -1,0 +1,11 @@
+[pattern_match]
+commandline=
+logfile=
+presentation=17
+soundfile=/usr/share/sounds/Borealis/Question.ogg
+
+[sensor_alarm]
+commandline=
+logfile=
+presentation=17
+soundfile=/usr/share/sounds/Borealis/Kopete_notify.ogg

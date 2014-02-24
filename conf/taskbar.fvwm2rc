@@ -1,0 +1,32 @@
+Style "FvwmTaskBar" NoTitle, BorderWidth 0, HandleWidth 0, Sticky, \
+		    WindowListSkip, CirculateSkip, Colorset 30
+DestroyModuleConfig FvwmTaskBar: *
+*FvwmTaskBar:	    Geometry	1020x30+0+0
+*FvwmTaskBar:	    Rows	1
+*FvwmTaskBar:	    Font	"shadow=1 1 se:xft:Blippo:Bold:pixelsize=12,se:xft:SimSun:Bold:pixelsize=12"
+#*FvwmTasKBar	    Font        "shadow=1 1 se:xft:SimSun:Bold:pixelsize=12"
+#*FvwmTaskBar:	    Font        -*-adobe-courier-bold-r-norml-*-*-100-*-*-m-*-iso8859-1,-*-simsun-medium-r-*-*-10-*-*-*-*-*-*-*
+*FvwmTaskBar:	    SelFont	"shadow=1 1 se:xft:Blippo:Bold:pixelsize=10"
+*FvwmTaskBar:	    StatusFont	"shadow=1 1 se:xft:Blippo:Bold:pixelsize=12"
+*FvwmTaskBar:	    Colorset	30
+*FvwmTaskBar:	    FocusColorset 30
+*FvwmTaskBar:	    NoBrightFocus
+*FvwmTaskBar:	    AutoStick
+#*FvwmTaskBar:	    AutoHide	2
+*FvwmTaskBar:	    UseSkipList
+*FvwmTaskBar:	    DeskOnly
+#*FvwmTaskBar:	    UseIconNames
+#*FvwmTaskBar:	    3DFvwm
+*FvwmTaskBar:	    ClockFormat
+*FvwmTaskBar:	    DateFormat
+*FvwmTaskBar:       MailBox None
+*FvwmTaskBar:	    StartName
+*FvwmTaskBar:	    StartMenu (Mouse 1) MenuFvwmRoot
+*FvwmTaskBar:       StartMenu (Mouse 2) MenuFvwmRoot
+*FvwmTaskBar:       StartIcon $[fvwm_img]/icon/fvwm_small.png
+*FvwmTaskBar:	    StartMenu (Mouse 3) MenuFvwmRoot 
+*FvwmTaskBar:       Action Click1 Iconify Off Raise
+*FvwmTaskBar:       Action Click2 Iconify On
+*FvwmTaskBar:       Action Click3 Lower
+*FvwmTaskBar:       NoIconAction SendToModule FvwmAnimate animate
+*FvwmTaskBar:       ButtonWidth 100

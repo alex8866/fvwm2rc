@@ -1,0 +1,6 @@
+How to install this theme?
+Just do like this:
+#git clone https://github.com/alex8866/fvwm2rc.git
+#cp -r fvwm2rc ~/.fvwm
+
+Then restart your fvwm
